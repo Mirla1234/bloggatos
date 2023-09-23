@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+  font-family: 'Mulish', sans-serif;
+  
+  --hue: 240;
+  --cor--branca: #FFFFFF;
+  --marrom--clara: hsla(240, 6%, 8%, 1);
+  
+}
+
+body{
+  display: grid;
+  background-color: #F4FCFF;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 3;
+  grid-template-areas: 
+  "header header header"
+  "main main sidebar"
+  "footer footer footer";
+  overflow-x: hidden;
+  width: 144rem;
+ 
+  
+}
+
+
+header{
+  grid-area: header;
+}
+
+main{
+  grid-area: main;
+}
+
+.sidebar{
+  grid-area: sidebar;
+}
+
+footer{
+  grid-area: footer;
+}
+
+
+p{
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color:var(--marrom--clara);
+  width: 80rem;
+  height: 36rem;
+  line-height: 160%;
+}
+
+h1{
+  font-size: 2.4rem;
+  padding-bottom: 3.2rem;
+  padding-top: 4.2rem;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 160%
+}
+
+h3{
+  font-size: 1.8rem;
+  font-weight: 700;
+ 
+}
+
+header{
+  width: 150rem;
+  height: 7.2rem;
+  background-color: hsla(195, 91%, 25%, 1);
+  display: flex;
+}
+
+input{
+  width: 108.3rem;
+  height: 4rem;
+  border-radius: 0.4rem;
+  border: none;
+  background-color: hsla(195, 46%, 40%, 1);
+  padding: 1.6rem 2.5rem 1.6rem 2.5rem;
+  
+}
+
+.input-wrapper ::placeholder{
+  color: var(--cor--branca);
+  font-family: 'Mulish', sans-serif;
+  font-weight: 600;
+}
+
+header .input-wrapper{
+  padding: 1.6rem 2.5rem 1.6rem 2.5rem 
+}
+
+header .vector {
+  padding: 1.6rem 2.5rem 1.6rem 11rem; 
+}
+
+header .avatar{
+  padding: 1.5rem 11rem 1.5rem 2.5rem;
+}
+
+main .gato{
+  padding: 4.4rem 3.4rem 3rem 11rem;
+ 
+}
+
+
+/*ponto de separação*/
+
+footer{
+  background-color: hsla(195, 91%, 25%, 1);
+  width: 144rem;
+  margin-top: 10rem;
+  margin-bottom: 0%;
+  width: 150rem;
+  height: 7.2rem;
+  
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+
+footer > p{
+  color: var(--cor--branca);
+  font-family: Mulish;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-top: 2.1rem;
+  padding-bottom: 2.6rem;
+  flex-direction: row-reverse;
+  align-items: center;
+ 
+ 
+  display: flex;
+ 
+ 
+  
+}
+
+
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+  
+}
+
+.item {
+  display: grid;
+  grid-template-areas:
+    "image title"
+    "image description";
+  gap: 2rem;
+  grid-template-rows: 
+    30px 100px;
+  
+}
+
+.item > img {
+  grid-area: image;
+  max-height: 100%;
+ 
+}
+
+.item > h3 {
+  grid-area: title;
+  padding-bottom: .1rem;
+}
+
+.item > p {
+  grid-area: description;
+  font-family: Mulish;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: Mulish;  
+  padding-top: 0rem;
+ 
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > img{
+  object-fit: contain;
+  margin-right: 8.6rem;
+  display: flex;
+}
+
+nav .foto {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+ 
+ 
+}
